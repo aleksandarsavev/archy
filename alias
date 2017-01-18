@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# version 20171018-1018
+
+#
+# Files listing in human readable form
+#
+alias ll="ls -lh"
+
+#
+# Calendar
+#
+# First day of week to be Monday
+#
+alias cal="cal -m"
+
+#
+# Volume
+#
+STEP=10
+alias volu="amixer set Master $STEP%+"
+alias vold="amixer set Master $STEP%-"
+

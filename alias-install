@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# version 20170118-1035
+
+DIR="$(eval echo ~$USER)"/.archy
+
+$(pwd)/check-dir
+
+ln -s $(pwd)/alias $DIR/.alias
+echo "$(pwd)/alias"
+echo "$DIR/.alias"
