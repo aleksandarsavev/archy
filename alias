@@ -21,3 +21,7 @@ STEP=10
 alias volu="amixer set Master $STEP%+"
 alias vold="amixer set Master $STEP%-"
 
+#
+# Arch Linux
+#
+# alias pacman-db-update="pacman -Syy"

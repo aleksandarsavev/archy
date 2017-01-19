@@ -1,9 +1,20 @@
 #!/bin/bash
 
-# version 20170118-11:20
+# version 20170118
 
 DIR="$(eval echo ~$USER)"/.archy
 $(pwd)/check-dir
 
-ln -s $(pwd)/alias $DIR/.alias
+SOURCE="$(pwd)/alias"
+TARGET="$DIR/.alias"
 
+ln -s $SOURCE $TARGET
+
+echo "Now add the following lines to ~/.bashrc:"
+
+echo "#"
+echo "# Import Archy"
+echo "#"
+echo "if [ -f ~/.archy/.alias ]; then"
+echo "    source ~/.archy/.alias"
+echo "fi"
