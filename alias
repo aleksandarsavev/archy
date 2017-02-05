@@ -22,6 +22,11 @@ alias volu="amixer set Master $STEP%+"
 alias vold="amixer set Master $STEP%-"
 
 #
+# SSH
+#
+alias ssh-magic="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
+
+#
 # Arch Linux
 #
 # alias pacman-db-update="pacman -Syy"
