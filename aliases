@@ -5,7 +5,7 @@
 #
 # Files listing in human readable form
 #
-alias ll="ls -lh"
+alias ll="ls -lh --color=auto"
 
 #
 # Calendar

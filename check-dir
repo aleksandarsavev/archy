@@ -4,7 +4,7 @@ DIR=".archy"
 FULL_DIR="$(eval echo "~$USER")/$DIR"
 if [ -d "$FULL_DIR" ];
 then
-    echo "Directory already exists: '$FULL_DIR'"
+    echo "Directory already exists: $FULL_DIR"
 else
     mkdir "$FULL_DIR"
     echo "Directory was created: '$FULL_DIR'"
