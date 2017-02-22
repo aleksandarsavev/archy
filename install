@@ -27,7 +27,7 @@ echo "Starting script check-dir..."
 $(pwd)/check-dir
 
 SOURCE_ALIASES="$(pwd)/aliases"
-TARGET_ALIASES="$DIR/.aliases"
+TARGET_ALIASES="$DIR/aliases"
 
 if [ ! -f $TARGET_ALIASES ]; then
     echo "Creating link for aliases..."
