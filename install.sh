@@ -7,7 +7,7 @@ git pull origin master;
 function doIt() {
     rsync --exclude ".git/" \
         --exclude "tips.md" \
-        --exclude ".osx" \
+        --exclude "short" \
         --exclude "install.sh" \
         --exclude "README.md" \
         --exclude "LICENSE" \
