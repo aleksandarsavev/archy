@@ -1,0 +1,8 @@
+[options]
+#font = Fixed 11
+font = UbuntuMono 13
+
+[colors]
+foreground = #dcdccc
+background  = #000000
+
