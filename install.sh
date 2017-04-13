@@ -2,7 +2,9 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-git pull origin master;
+function gitHim() {
+    git pull origin master;
+}
 
 function doIt() {
     rsync --exclude ".git/" \
@@ -14,6 +16,20 @@ function doIt() {
         -avh --no-perms . ~;
     source ~/.bash_profile;
 }
+
+function echoMe() {
+    echo "================================";
+    echo "!                              !"
+    echo "!   Archy Installer (c) 2017   !";
+    echo "!                              !"
+    echo "================================";
+}
+
+echoMe;
+echo;
+gitHim;
+echo;
+doIt;
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
     doIt;
