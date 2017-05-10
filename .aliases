@@ -28,6 +28,16 @@ alias vold="amixer set Master $STEP%-"
 alias ssh-magic="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"
 
 #
+# Git
+#
+alias git-graph="git log --graph --decorate --oneline"
+
+#
+# Monitors
+#
+alias monitor-on-left="xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
+
+#
 # Arch Linux
 #
 # alias pacman-db-update="pacman -Syy"
