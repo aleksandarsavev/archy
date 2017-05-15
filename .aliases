@@ -3,8 +3,9 @@
 # version 20171018-1018
 
 #
-# Files listing in human readable form
+# Files and directories
 #
+alias ..="cd .."
 alias ll="ls -lh --color=auto"
 alias la="ll -a"
 
@@ -41,3 +42,4 @@ alias monitor-on-left="xrandr --output eDP-1 --auto --output HDMI-1 --auto --lef
 # Arch Linux
 #
 # alias pacman-db-update="pacman -Syy"
+
