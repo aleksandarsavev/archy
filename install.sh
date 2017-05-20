@@ -11,6 +11,8 @@ function doIt() {
         --exclude "tips.md" \
         --exclude "short" \
         --exclude "install.sh" \
+	--exclude "install-fonts.sh" \
+	--exclude "install-packs.sh" \
         --exclude "README.md" \
         --exclude "LICENSE" \
         -avh --no-perms . ~;
