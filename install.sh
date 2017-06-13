@@ -3,6 +3,7 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 function gitHim() {
+    echo "Fetch the latest version of Archy (c) 2017"
     git pull origin master;
 }
 
@@ -11,8 +12,8 @@ function doIt() {
         --exclude "tips.md" \
         --exclude "short" \
         --exclude "install.sh" \
-	--exclude "install-fonts.sh" \
-	--exclude "install-packs.sh" \
+        --exclude "install-fonts.sh" \
+        --exclude "install-packs.sh" \
         --exclude "README.md" \
         --exclude "LICENSE" \
         -avh --no-perms . ~;
@@ -20,11 +21,8 @@ function doIt() {
 }
 
 function echoMe() {
-    echo "================================";
-    echo "!                              !"
-    echo "!   Archy Installer (c) 2017   !";
-    echo "!                              !"
-    echo "================================";
+    echo "Archy Installer (c) 2017";
+    echo ""
 }
 
 echoMe;
