@@ -34,6 +34,12 @@ alias ssh-magic="ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null
 alias git-graph="git log --graph --decorate --oneline"
 
 #
+# Tar
+#
+alias targz-create="tar -zcvf"
+alias targz-extract="tar xf"
+
+#
 # Monitors
 #
 alias monitor-on-left="xrandr --output eDP-1 --auto --output HDMI-1 --auto --left-of eDP-1"
